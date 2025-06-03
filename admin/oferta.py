@@ -4,7 +4,6 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 from utils import get_connection
-load_dotenv()
 
 st.title('Gestión de oferta académica')
 
