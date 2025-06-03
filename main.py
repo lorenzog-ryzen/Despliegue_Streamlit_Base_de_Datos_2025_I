@@ -2,6 +2,9 @@ import streamlit as st
 from datetime import datetime, timezone
 import os
 
+if os.path.exists(".env"):
+    from dotenv import load_dotenv
+    load_dotenv(encoding="utf-8")
 
 if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
